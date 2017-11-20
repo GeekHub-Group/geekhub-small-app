@@ -1,4 +1,4 @@
-<style type="less">
+<style type="scss">
   .group {}
 </style>
 <template>
@@ -12,7 +12,7 @@
     </view>
   </view>
 </template>
-<script>
+<script type="babel">
   import wepy from 'wepy'
   import GroupItem from './groupitem'
 

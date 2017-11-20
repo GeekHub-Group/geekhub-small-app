@@ -1,10 +1,12 @@
 {
   "name": "geekhub-small-app",
-  "version": "1.2.8",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/app.js",
+  "private": true,
   "scripts": {
-    "dev": "wepy build --watch",
+    "dev": "cross-env NODE_ENV=dev wepy build --watch",
+    "local": "cross-env NODE_ENV=local wepy build --watch",
     "build": "cross-env NODE_ENV=production wepy build --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

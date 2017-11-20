@@ -1,0 +1,53 @@
+@import "functions";
+
+page, .wrapper {
+  background: #f0f0f0;
+  height: 100%;
+}
+
+page {
+  position: relative;
+}
+
+.wrapper {
+  overflow: auto;
+}
+
+button:after {
+  content: normal;
+}
+
+scroll-view {
+  min-height: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-column, .flex-row {
+  display: flex;
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &.flex-row {
+    flex-direction: row;
+  }
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.flex-center {
+    align-items: center;
+  }
+
+  &.flex-middle {
+    justify-content: center;
+  }
+
+  & > .flex-item {
+    flex: 1;
+  }
+}

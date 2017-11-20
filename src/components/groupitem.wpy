@@ -1,4 +1,4 @@
-<style type="less">
+<style type="scss">
 .groupitem {
 }
 </style>
@@ -8,7 +8,7 @@
     <text class="name" @tap="tap"> {{gitem.childname}}</text>
   </view>
 </template>
-<script>
+<script type="babel">
   import wepy from 'wepy'
 
   export default class GroupItem extends wepy.component {
